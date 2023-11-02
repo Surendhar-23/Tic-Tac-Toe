@@ -382,14 +382,14 @@ section {
   position: absolute;
   margin-top: 1px;
   top: 0;
-  left: 30px;
+  left: 0px;
   width: 28px;
   height: 28px;
   background: linear-gradient(to bottom, #444, #222);
   border-radius: 50%;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
     inset 0 8px 60px rgba(255, 255, 255, 0.2),
-    inset 0 8px 60px rgba(255, 255, 255, 0.2);
+    inset 0 8px 60px rgba(255, 255, 255, 0.2), 0px 0px 30px #343a40;
   transition: 0.5s;
 }
 
