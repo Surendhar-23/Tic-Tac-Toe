@@ -188,6 +188,7 @@ let addO = function (e, c) {
         ocnt++;
       }
       if (ocnt == 3) {
+        autoplaytoggle.style.display = "none";
         console.log("O'Wins");
         wintext.textContent = "O'Wins";
         wincolor = window.getComputedStyle(players[0]).backgroundColor;
@@ -216,6 +217,7 @@ let addX = function (e, c) {
         xcnt++;
       }
       if (xcnt == 3) {
+        autoplaytoggle.style.display = "none";
         wintext.textContent = "X'Wins";
         console.log("X'Wins");
         wincolor = window.getComputedStyle(players[1]).backgroundColor;
@@ -257,6 +259,7 @@ let play = function () {
           if (!autoplay) addX(e, c);
         }
         if (place.length === 9) {
+          autoplaytoggle.style.display = "none";
           wintext.textContent = "TIE";
           overlay.classList.toggle("show");
           console.log("TIE");
