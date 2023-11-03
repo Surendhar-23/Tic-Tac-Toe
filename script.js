@@ -260,6 +260,8 @@ let play = function () {
         }
         if (place.length === 9) {
           autoplaytoggle.style.display = "none";
+          document.querySelector(".overlay-container").style.backgroundColor =
+            "#bbb";
           wintext.textContent = "TIE";
           overlay.classList.toggle("show");
           console.log("TIE");
